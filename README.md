@@ -18,12 +18,15 @@
     - POST `/api/v1/banks` for creation new bank record
     - PATCH `/api/v1/banks/:id` for update existing bank record
     - DELETE `/api/v1/banks/:id` for deletion of existing bank record
- 2. For Transaction CRUD operations
+ 2. For Accounts Create and Update operations
+    - POST `/api/v1/banks/:bank_id/accounts` for creation new bank account
+    - PATCH `/api/v1/banks/:bank_id/accounts/:id` for updating existing account record
+ 3. For Transaction CRUD operations
     - GET `/api/v1/banks/:bank_id/accounts/:account_id/transactions` retrieves all transactions of an account
     - POST `/api/v1/banks/:bank_id/accounts/:account_id/transactions` for creation new transaction of an account
     - PATCH `/api/v1/banks/:bank_id/accounts/:account_id/transactions/:id` for update existing transaction record
     - DELETE `/api/v1/banks/:bank_id/accounts/:account_id/transactions/:id` for deletion of existing transaction record
- 3. To get the total of all transaction amounts of an account
+ 4. To get the total of all transaction amounts of an account
     - GET `/api/v1/banks/:bank_id/accounts/:id/amount` retrieve the total amount of all transactions of an account
 ​
 
